@@ -137,7 +137,7 @@ function TokenomicsSection() {
         <div className="mt-16">
           <div className="bg-gradient-to-r from-slate-700 to-slate-600 rounded-2xl p-8 text-white">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">👨‍💻 The Scalper's Journey</h3>
+              <h3 className="text-2xl font-bold mb-2">👨‍💻 The Scalper&apos;s Journey</h3>
               <p className="text-slate-200">From 14-year-old hustler to Pokemon card king</p>
             </div>
 
@@ -146,14 +146,14 @@ function TokenomicsSection() {
                 <strong className="text-white">2017.</strong> I was 14 when I first dipped my toes into reselling shoes.
                 Back then, it was pure chaos - no proxies, no sophisticated with captcha solving, just raw speed and luck.
                 I was one of the first kids my age running scripts to cop Jordans, Nikes, and anything hyped.
-                Those early days taught me I'd never be able to give up.
+                Those early days taught me I&apos;d never be able to give up.
               </p>
 
               <p>
                 <strong className="text-white">Then came the backdoor era.</strong> When traditional botting got too saturated
                 and too difficult, I pivoted to backdooring, working directly with Footlocker, JD sports, and
                 Nike staff. I learned how to connect with these people, to make money together.
-                That's when I realized the real money wasn't made alone, but with others.
+                That&apos;s when I realized the real money wasn&apos;t made alone, but with others.
               </p>
 
               <p>
@@ -164,26 +164,26 @@ function TokenomicsSection() {
               </p>
 
               <p>
-                <strong className="text-white">Fast forward to Pokemon.</strong> I've seen every iteration of this space
+                <strong className="text-white">Fast forward to Pokemon.</strong> I&apos;ve seen every iteration of this space
                 from the wild west of Supreme bots to the corporate takeover of Shopify. Pokemon cards?
-                That's just sneaker culture meets collectibles. Same game, different assets. I know exactly
+                That&apos;s just sneaker culture meets collectibles. Same game, different assets. I know exactly
                 where the inefficiencies are, where the whales lurk, and how to build something that actually
                 works for the average scalper.
               </p>
 
               <p>
-                <strong className="text-white">Why I hate most bots around now?</strong> Because they're cringe. Built by people
+                <strong className="text-white">Why I hate most bots around now?</strong> Because they&apos;re cringe. Built by people
                 who maximise for licenses sold and not quality of service.
-                No understanding of the game nor any respect for the people they're servicing.
-                Scalp on Sol is different - it's built by someone who's been in the trenches,
+                No understanding of the game nor any respect for the people they&apos;re servicing.
+                Scalp on Sol is different - it&apos;s built by someone who&apos;s been in the trenches,
                 who understands the ecosystem, and who actually cares about the community.
               </p>
 
               <div className="mt-6 p-4 bg-slate-800/50 rounded-lg border border-slate-600">
                 <p className="text-center text-slate-200 italic">
-                  💎 "I've spent thousands of dollars and hours on proxies, servers, and failed projects. Since the start of this whole
-                  Pokemon onchain meta I've been building something transparent, effective, and actually useful
-                  for fellow scalpers who want to capitalize." ⚡
+                  💎 &quot;I&apos;ve spent thousands of dollars and hours on proxies, servers, and failed projects. Since the start of this whole
+                  Pokemon onchain meta I&apos;ve been building something transparent, effective, and actually useful
+                  for fellow scalpers who want to capitalize.&quot; ⚡
                 </p>
               </div>
             </div>

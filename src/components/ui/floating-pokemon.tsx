@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 interface FloatingPokemonProps {
@@ -18,6 +19,9 @@ const FloatingPokemon = ({
   direction = "up"
 }: FloatingPokemonProps) => {
   const [position, setPosition] = useState(startPosition)
+  const [imgSrc, setImgSrc] = useState(
+    `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`
+  )
 
   const sizeClasses = {
     small: "w-12 h-12",
@@ -72,14 +76,16 @@ const FloatingPokemon = ({
         transform: "translate(-50%, -50%)"
       }}
     >
-      <img
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
+      <Image
+        src={imgSrc}
         alt={`Pokemon ${pokemonId}`}
-        className="w-full h-full object-contain filter drop-shadow-sm"
-        onError={(e) => {
+        fill
+        className="object-contain filter drop-shadow-sm"
+        onError={() => {
           // Fallback to pixel art if official artwork fails
-          const target = e.target as HTMLImageElement
-          target.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`
+          setImgSrc(
+            `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`
+          )
         }}
       />
     </div>
