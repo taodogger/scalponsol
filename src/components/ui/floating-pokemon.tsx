@@ -22,6 +22,7 @@ const FloatingPokemon = ({
   const [imgSrc, setImgSrc] = useState(
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`
   )
+  const [isMounted, setIsMounted] = useState(false)
 
   const sizeClasses = {
     small: "w-12 h-12",
@@ -30,6 +31,8 @@ const FloatingPokemon = ({
   }
 
   useEffect(() => {
+    setIsMounted(true)
+    
     const moveInterval = setInterval(() => {
       setPosition(prev => {
         let newX = prev.x
@@ -66,6 +69,10 @@ const FloatingPokemon = ({
 
     return () => clearInterval(moveInterval)
   }, [direction, speed])
+
+  if (!isMounted) {
+    return null
+  }
 
   return (
     <div
