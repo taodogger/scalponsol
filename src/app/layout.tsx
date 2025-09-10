@@ -39,7 +39,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#1e293b" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
