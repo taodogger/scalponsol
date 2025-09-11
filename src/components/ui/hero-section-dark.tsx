@@ -95,11 +95,31 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                 {description}
               </p>
               <div className="relative z-20 items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+                <div className="relative group">
+                  <button
+                    disabled
+                    className="relative z-20 inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-gray-400 bg-gray-600 cursor-not-allowed rounded-full shadow-lg border border-gray-500/20 opacity-50"
+                  >
+                    Access Platform
+                  </button>
+                  {/* Hover tooltip */}
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-30">
+                    Platform is invite-only for now. Due to how the algorithms work, we cannot have too many people running the same strategy. New openings will be made available to highest stakeholders.
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* X (Twitter) link */}
+              <div className="mt-3 flex justify-center">
                 <a
-                  href={ctaHref}
+                  href="https://x.com/masterbotsol"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow on X"
                   className="relative z-20 inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-gradient-to-r from-purple-800 to-purple-700 hover:from-purple-700 hover:to-purple-600 dark:from-purple-700 dark:to-purple-600 dark:hover:from-purple-600 dark:hover:to-purple-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-purple-600/20"
                 >
-                  Access Platform
+                  Follow on X
                 </a>
               </div>
             </div>
