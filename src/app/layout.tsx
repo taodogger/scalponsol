@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Scalponsol - Pokemon Card Scalping Platform",
+  title: "MasterBot - Pokemon Card Scalping Platform",
   description: "Built by ex-scalper turned dev with 20% daily revenue transparency. The ultimate Pokemon card scalping platform with real-time price tracking and AI-powered tools.",
-  keywords: ["pokemon", "scalping", "cards", "trading", "memecoin", "SoS"],
-  authors: [{ name: "Scalponsol Team" }],
+  keywords: ["pokemon", "scalping", "cards", "trading", "memecoin", "MBot"],
+  authors: [{ name: "MasterBot Team" }],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

@@ -68,7 +68,7 @@ function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white dark:text-white sm:text-4xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$SoS</span> Ecosystem
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$MBot</span> Ecosystem
           </h2>
           <p className="mt-4 text-lg text-purple-200 dark:text-purple-300 max-w-3xl mx-auto">
             Built by ex-scalper turned dev with 20% daily revenue transparency.

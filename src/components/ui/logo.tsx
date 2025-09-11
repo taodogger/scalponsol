@@ -25,8 +25,8 @@ export function Logo({ size = "md", variant = "default", className }: LogoProps)
   if (variant === "icon-only") {
     return (
       <Image
-        src="/PS-Logo.png"
-        alt="Scalponsol Logo"
+        src="/MBot.png"
+        alt="MasterBot Logo"
         width={size === "sm" ? 24 : size === "md" ? 32 : size === "lg" ? 48 : 64}
         height={size === "sm" ? 24 : size === "md" ? 32 : size === "lg" ? 48 : 64}
         className={cn(sizeClasses[size], className)}
@@ -37,7 +37,7 @@ export function Logo({ size = "md", variant = "default", className }: LogoProps)
   if (variant === "text-only") {
     return (
       <span className={cn("font-bold text-white dark:text-white", textSizeClasses[size], className)}>
-        Scalponsol
+        MasterBot
       </span>
     )
   }
@@ -46,14 +46,14 @@ export function Logo({ size = "md", variant = "default", className }: LogoProps)
   return (
     <div className={cn("flex items-center space-x-2", className)}>
       <Image
-        src="/PS-Logo.png"
-        alt="Scalponsol Logo"
+        src="/MBot.png"
+        alt="MasterBot Logo"
         width={size === "sm" ? 24 : size === "md" ? 32 : size === "lg" ? 48 : 64}
         height={size === "sm" ? 24 : size === "md" ? 32 : size === "lg" ? 48 : 64}
         className={sizeClasses[size]}
       />
       <span className={cn("font-bold text-white dark:text-white", textSizeClasses[size])}>
-        Scalponsol
+        MasterBot
       </span>
     </div>
   )

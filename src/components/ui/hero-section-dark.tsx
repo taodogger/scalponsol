@@ -85,18 +85,18 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
 
 
           <div className="max-w-screen-xl relative z-10 mx-auto px-4 py-16 gap-12 md:px-8 flex flex-col justify-center min-h-screen">
-            {/* Logo at top left */}
-            <div className="absolute top-8 -left-50 z-20">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20 shadow-lg">
-                <Logo size="lg" />
-              </div>
-            </div>
 
             <div className="space-y-5 max-w-3xl leading-0 lg:leading-5 mx-auto text-center mt-2">
+              {/* Logo above CA text */}
+              <div className="flex justify-center mb-4">
+                <Logo size="xl" variant="icon-only" />
+              </div>
+              
               <h1 className="text-sm text-purple-300 dark:text-purple-400 group font-geist mx-auto px-5 py-2 bg-gradient-to-tr from-purple-500/20 via-purple-400/20 to-transparent dark:from-purple-500/10 dark:via-purple-400/10 border-[2px] border-purple-500/20 dark:border-purple-400/20 rounded-3xl w-fit">
                 CA: <span className="font-mono text-xs">Coming Soon</span>
                 <ChevronRight className="inline w-4 h-4 ml-2 group-hover:translate-x-1 duration-300" />
               </h1>
+              
               <h2 className="text-4xl tracking-tighter font-geist bg-clip-text text-transparent mx-auto md:text-6xl bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,255,255,_0.9)_100%)] dark:bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,255,255,_0.8)_100%)]">
                 {subtitle.regular}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-purple-400 to-purple-600 dark:from-purple-200 dark:via-purple-400 dark:to-purple-600">
