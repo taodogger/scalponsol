@@ -11,6 +11,11 @@ const items = [
     icon: Home,
   },
   {
+    name: "Wins",
+    url: "#wins",
+    icon: Trophy,
+  },
+  {
     name: "Features",
     url: "#features",
     icon: Zap,
@@ -24,11 +29,6 @@ const items = [
     name: "Backstory",
     url: "#backstory",
     icon: BookOpen,
-  },
-  {
-    name: "Wins",
-    url: "#wins",
-    icon: Trophy,
   },
 ]
 

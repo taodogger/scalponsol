@@ -16,6 +16,19 @@ export default function Home() {
         <HeroSectionDemo />
       </section>
       
+      {/* Community Wins section */}
+      <section id="wins" className="h-screen bg-black flex flex-col items-center justify-center">
+        {/* Title section */}
+        <div className="text-center mb-16 pt-20">
+          <h2 className="text-3xl font-bold text-white dark:text-white sm:text-4xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$MBot</span> Community Wins
+          </h2>
+        </div>
+        
+        {/* Carousel */}
+        <CarouselDemo />
+      </section>
+      
       {/* Features section */}
       <section id="features">
         <FeaturesSection />
@@ -29,19 +42,6 @@ export default function Home() {
       {/* Backstory section */}
       <section id="backstory">
         <BackstorySection />
-      </section>
-      
-      {/* Community Wins section */}
-      <section id="wins" className="h-screen bg-black flex flex-col items-center justify-center">
-        {/* Title section */}
-        <div className="text-center mb-16 pt-20">
-          <h2 className="text-3xl font-bold text-white dark:text-white sm:text-4xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$MBot</span> Community Wins
-          </h2>
-        </div>
-        
-        {/* Carousel */}
-        <CarouselDemo />
       </section>
     </div>
   );
