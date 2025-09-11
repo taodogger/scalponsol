@@ -17,7 +17,7 @@ export function BackstorySection() {
         <div className="mt-16">
           <div className="bg-gradient-to-r from-purple-800 to-purple-700 rounded-2xl p-8 text-white">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">The Scalper's Journey</h3>
+              <h3 className="text-2xl font-bold mb-2">The Scalper&apos;s Journey</h3>
               <p className="text-purple-200">From 14-year-old hustler to Pokemon card king</p>
             </div>
 

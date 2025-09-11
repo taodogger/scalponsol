@@ -4,18 +4,12 @@ import { ChevronRight } from "lucide-react"
 import { Logo } from "./logo"
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
-  title?: string
   subtitle?: {
     regular: string
     gradient: string
   }
   description?: string
-  ctaText?: string
   ctaHref?: string
-  bottomImage?: {
-    light: string
-    dark: string
-  }
   gridOptions?: {
     angle?: number
     cellSize?: number
@@ -60,18 +54,12 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
   (
     {
       className,
-      title = "Build products for everyone",
       subtitle = {
         regular: "Designing your projects faster with ",
         gradient: "the largest figma UI kit.",
       },
       description = "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-      ctaText = "Browse courses",
       ctaHref = "#",
-      bottomImage = {
-        light: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&crop=center",
-        dark: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop&crop=center",
-      },
       gridOptions,
       ...props
     },
