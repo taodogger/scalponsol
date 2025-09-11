@@ -36,7 +36,7 @@ export function Logo({ size = "md", variant = "default", className }: LogoProps)
 
   if (variant === "text-only") {
     return (
-      <span className={cn("font-bold text-gray-900 dark:text-white", textSizeClasses[size], className)}>
+      <span className={cn("font-bold text-white dark:text-white", textSizeClasses[size], className)}>
         Scalponsol
       </span>
     )
@@ -52,7 +52,7 @@ export function Logo({ size = "md", variant = "default", className }: LogoProps)
         height={size === "sm" ? 24 : size === "md" ? 32 : size === "lg" ? 48 : 64}
         className={sizeClasses[size]}
       />
-      <span className={cn("font-bold text-gray-900 dark:text-white", textSizeClasses[size])}>
+      <span className={cn("font-bold text-white dark:text-white", textSizeClasses[size])}>
         Scalponsol
       </span>
     </div>

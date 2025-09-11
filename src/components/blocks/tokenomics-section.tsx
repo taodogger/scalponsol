@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils"
-import { FloatingPokemon } from "@/components/ui/floating-pokemon"
 
 function TokenomicsSection() {
   const tokenomicsData = [
@@ -37,52 +36,14 @@ function TokenomicsSection() {
   ]
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
-      {/* Background Pokemon Elements */}
-      <div className="absolute inset-0 z-0">
-        <FloatingPokemon
-          pokemonId={95} // Onix
-          size="medium"
-          speed={0.5}
-          startPosition={{ x: 5, y: 15 }}
-          direction="right"
-        />
-        <FloatingPokemon
-          pokemonId={131} // Lapras
-          size="large"
-          speed={0.4}
-          startPosition={{ x: 95, y: 20 }}
-          direction="down"
-        />
-        <FloatingPokemon
-          pokemonId={149} // Dragonite
-          size="medium"
-          speed={0.7}
-          startPosition={{ x: 25, y: 85 }}
-          direction="up"
-        />
-        <FloatingPokemon
-          pokemonId={65} // Alakazam
-          size="small"
-          speed={0.9}
-          startPosition={{ x: 75, y: 45 }}
-          direction="diagonal"
-        />
-        <FloatingPokemon
-          pokemonId={68} // Machamp
-          size="small"
-          speed={0.6}
-          startPosition={{ x: 60, y: 75 }}
-          direction="left"
-        />
-      </div>
+    <section className="py-24 bg-black dark:bg-black relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-            <span className="text-2xl mr-2">💎</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-600">$SoS</span> Tokenomics
+          <h2 className="text-3xl font-bold text-white dark:text-white sm:text-4xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$SoS</span> Tokenomics
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-purple-200 dark:text-purple-300 max-w-3xl mx-auto">
             Built by ex-scalper turned dev with 20% daily revenue transparency. Every token you hold unlocks more value in our ecosystem.
           </p>
         </div>
@@ -91,10 +52,10 @@ function TokenomicsSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white">
+              <div className="text-2xl font-bold text-white dark:text-white">
                 {stat.value}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
+              <div className="text-sm text-purple-300 dark:text-purple-400">
                 {stat.label}
               </div>
             </div>
@@ -107,8 +68,8 @@ function TokenomicsSection() {
             <div
               key={index}
               className={cn(
-                "relative overflow-hidden rounded-xl p-6 border border-gray-200 dark:border-gray-800",
-                "bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900"
+                "relative overflow-hidden rounded-xl p-6 border border-purple-500/20 dark:border-purple-400/20",
+                "bg-gradient-to-br from-purple-900/20 to-purple-800/20 dark:from-purple-900/30 dark:to-purple-800/30"
               )}
             >
               <div className={cn(
@@ -116,10 +77,10 @@ function TokenomicsSection() {
                 item.color
               )} />
               <div className="relative">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-semibold text-white dark:text-white mb-2">
                   {item.category}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-3">
+                <p className="text-purple-200 dark:text-purple-300 mb-3">
                   {item.utility}
                 </p>
                 <div className={cn(
@@ -133,62 +94,6 @@ function TokenomicsSection() {
           ))}
         </div>
 
-        {/* Developer Story */}
-        <div className="mt-16">
-          <div className="bg-gradient-to-r from-slate-700 to-slate-600 rounded-2xl p-8 text-white">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">👨‍💻 The Scalper&apos;s Journey</h3>
-              <p className="text-slate-200">From 14-year-old hustler to Pokemon card king</p>
-            </div>
-
-            <div className="space-y-4 text-slate-100 leading-relaxed max-w-4xl mx-auto">
-              <p>
-                <strong className="text-white">2017.</strong> I was 14 when I first dipped my toes into reselling shoes.
-                Back then, it was pure chaos - no proxies, no sophisticated with captcha solving, just raw speed and luck.
-                I was one of the first kids my age running scripts to cop Jordans, Nikes, and anything hyped.
-                Those early days taught me I&apos;d never be able to give up.
-              </p>
-
-              <p>
-                <strong className="text-white">Then came the backdoor era.</strong> When traditional botting got too saturated
-                and too difficult, I pivoted to backdooring, working directly with Footlocker, JD sports, and
-                Nike staff. I learned how to connect with these people, to make money together.
-                That&apos;s when I realized the real money wasn&apos;t made alone, but with others.
-              </p>
-
-              <p>
-                <strong className="text-white">The proxy era hit.</strong> Suddenly, everyone was using residential proxies,
-                VPNs, and headless browsers. The game changed overnight. I had to level up fast.
-                Started building my own proxy networks, rotating IPs, developing custom fingerprints
-                and started to make money selling on grey-hat forums to other scalpers.
-              </p>
-
-              <p>
-                <strong className="text-white">Fast forward to Pokemon.</strong> I&apos;ve seen every iteration of this space
-                from the wild west of Supreme bots to the corporate takeover of Shopify. Pokemon cards?
-                That&apos;s just sneaker culture meets collectibles. Same game, different assets. I know exactly
-                where the inefficiencies are, where the whales lurk, and how to build something that actually
-                works for the average scalper.
-              </p>
-
-              <p>
-                <strong className="text-white">Why I hate most bots around now?</strong> Because they&apos;re cringe. Built by people
-                who maximise for licenses sold and not quality of service.
-                No understanding of the game nor any respect for the people they&apos;re servicing.
-                Scalp on Sol is different - it&apos;s built by someone who&apos;s been in the trenches,
-                who understands the ecosystem, and who actually cares about the community.
-              </p>
-
-              <div className="mt-6 p-4 bg-slate-800/50 rounded-lg border border-slate-600">
-                <p className="text-center text-slate-200 italic">
-                  💎 &quot;I&apos;ve spent thousands of dollars and hours on proxies, servers, and failed projects. Since the start of this whole
-                  Pokemon onchain meta I&apos;ve been building something transparent, effective, and actually useful
-                  for fellow scalpers who want to capitalize.&quot; ⚡
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

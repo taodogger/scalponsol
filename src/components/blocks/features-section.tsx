@@ -1,5 +1,4 @@
 import { FeatureCard } from "@/components/ui/feature-card"
-import { FloatingPokemon } from "@/components/ui/floating-pokemon"
 import {
   TrendingUp,
   Trophy,
@@ -64,45 +63,14 @@ function FeaturesSection() {
   ]
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-gray-950 relative overflow-hidden">
-      {/* Background Pokemon Elements */}
-      <div className="absolute inset-0 z-0">
-        <FloatingPokemon
-          pokemonId={39} // Jigglypuff
-          size="small"
-          speed={0.4}
-          startPosition={{ x: 8, y: 25 }}
-          direction="up"
-        />
-        <FloatingPokemon
-          pokemonId={54} // Psyduck
-          size="medium"
-          speed={0.6}
-          startPosition={{ x: 92, y: 35 }}
-          direction="left"
-        />
-        <FloatingPokemon
-          pokemonId={143} // Snorlax
-          size="large"
-          speed={0.3}
-          startPosition={{ x: 20, y: 70 }}
-          direction="right"
-        />
-        <FloatingPokemon
-          pokemonId={113} // Chansey
-          size="small"
-          speed={0.8}
-          startPosition={{ x: 80, y: 75 }}
-          direction="diagonal"
-        />
-      </div>
+    <section className="py-24 bg-black dark:bg-black relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-            <span className="text-2xl mr-2">⚡</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-600">$SoS</span> Ecosystem
+          <h2 className="text-3xl font-bold text-white dark:text-white sm:text-4xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">$SoS</span> Ecosystem
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-purple-200 dark:text-purple-300 max-w-3xl mx-auto">
             Built by ex-scalper turned dev with 20% daily revenue transparency.
             Real-time price tracking and anti-ban protection available now.
             Advanced features coming soon with token holder benefits.
@@ -125,11 +93,11 @@ function FeaturesSection() {
         <div className="relative z-20 mt-16 text-center">
           <a
             href="/login"
-            className="relative z-20 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-slate-700 to-slate-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="relative z-20 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-700 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
-            ⚡ Start with Price Tracking Today
+            Start with Price Tracking Today
           </a>
-          <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-sm text-purple-300 dark:text-purple-400">
             Use our available features now, and get early access to advanced tools as a token holder.
           </p>
         </div>

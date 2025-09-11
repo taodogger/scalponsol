@@ -151,7 +151,7 @@ function LoginPage() {
         <div className="bg-white/90 dark:bg-white/10 backdrop-blur-lg rounded-2xl p-6 mb-6 border border-gray-200 dark:border-white/20 shadow-lg">
           <div className="flex items-center justify-center mb-4">
             <TrendingUp className="h-5 w-5 text-green-600 dark:text-green-400 mr-2" />
-            <h3 className="text-gray-900 dark:text-white font-semibold">💎 $SoS Price</h3>
+            <h3 className="text-gray-900 dark:text-white font-semibold">$SoS Price</h3>
           </div>
 
           {loading ? (
@@ -212,16 +212,16 @@ function LoginPage() {
                 🐦 Join X Community
               </button>
               <button className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold py-3 px-6 rounded-xl hover:shadow-lg transition-all hover:scale-105">
-                👻 Connect Phantom Wallet
+                Connect Phantom Wallet
               </button>
             </>
           ) : (
             <>
               <button className="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-semibold py-3 px-6 rounded-xl hover:shadow-lg transition-all hover:scale-105">
-                🚀 Enter Dashboard
+                Enter Dashboard
               </button>
               <button className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold py-3 px-6 rounded-xl hover:shadow-lg transition-all hover:scale-105">
-                👻 Connect Phantom Wallet
+                Connect Phantom Wallet
               </button>
             </>
           )}
