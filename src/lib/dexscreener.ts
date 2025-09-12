@@ -19,7 +19,7 @@ export interface DexScreenerResponse {
 }
 
 // Replace with your actual contract address
-export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "YOUR_CONTRACT_ADDRESS_HERE"
+export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "x6EarUTSrJzwyoBr1WjW4xciHFkrWMaaFnsi6TEpump"
 
 export async function fetchDexData(): Promise<DexPair | null> {
   if (CONTRACT_ADDRESS === "YOUR_CONTRACT_ADDRESS_HERE") {

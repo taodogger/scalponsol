@@ -84,7 +84,7 @@ Create a `.env.local` file with:
 
 ```env
 # DexScreener Configuration
-NEXT_PUBLIC_CONTRACT_ADDRESS=YOUR_CONTRACT_ADDRESS_HERE
+NEXT_PUBLIC_CONTRACT_ADDRESS=x6EarUTSrJzwyoBr1WjW4xciHFkrWMaaFnsi6TEpump
 
 # Platform Configuration
 NEXT_PUBLIC_PLATFORM_LOCKED=true
